@@ -1,0 +1,33 @@
+RewriteEngine on
+RewriteBase /
+
+### Canonicalize codeigniter URLs
+# Enforce www
+# If you have subdomains, you can add them to
+# the list using the "|" (OR) regex operator
+# RewriteCond %{HTTP_HOST} ^website.com [NC]
+# RewriteRule ^(.*)$ https://www.website.com/$1 [L,R=301]
+
+# If your default controller is something other than
+# "welcome" you should probably change this
+RewriteRule ^(home(/index)?|index(\.php)?)/?$ / [L,R=301]
+RewriteRule ^(.*)/index/?$ $1 [L,R=301]
+
+# Removes trailing slashes (prevents SEO duplicate content issues)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ $1 [L,R=301]
+
+# Checks to see if the user is attempting to access a valid file,
+# such as an image or css document, if this isn't true it sends the
+# request to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+<IfModule mod_deflate.c>
+    # ETags don't play nicely with mod_deflate so turn them off
+    Header unset ETag
+    FileETag None
+</IfModule>
+
+AddDefaultCharset utf-8
