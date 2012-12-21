@@ -16,4 +16,8 @@ At the root of the project run
 +   jQuery 1.8.3
 +   HTML5 Shiv 3.6.1
 +   require.js 2.1.2
++   Bootstrap 2.2.2
 
+### CSS
+
++   Bootstrap 2.2.2
