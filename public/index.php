@@ -195,7 +195,10 @@ if (defined('ENVIRONMENT'))
 		}
 
 		define('APPPATH', BASEPATH.$application_folder.'/');
-	}
+    }
+
+    // Path to the vendor folder for Composer
+    define('VENDORPATH', dirname(dirname(__FILE__)) . '/vendor/');
 
 /*
  * --------------------------------------------------------------------
@@ -205,6 +208,10 @@ if (defined('ENVIRONMENT'))
  * And away we go...
  *
  */
+
+// init Composer autoloading
+require_once VENDORPATH.'autoload.php';
+
 require_once BASEPATH.'core/CodeIgniter.php';
 
 /* End of file index.php */

@@ -1,5 +1,8 @@
 .DS_Store
 
+composer.phar
+/vendor
+
 application/config/development
 
 application/cache/*
