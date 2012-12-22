@@ -1,4 +1,13 @@
-# BoilerPlate README
+# AppStrap BoilerPlate README
+
+AppStrap is a CodeIgniter boilerplate to get you running in minutes. Include CodeIgniter 2.1.3, HTML5 BoilerPlate, Twitter Bootstrap & more.
+AppStrap is easy to get running on Heroku in under a minute with a few simple commands
+    
+    $ git init appstrap_boilerplate
+    $ cd appstrap_boilerplate
+    $ git pull git@github.com:winglian/appstrap.git
+    $ heroku apps:create -b git://github.com/winglian/heroku-buildpack-php#appstrap
+    $ git push heroku
 
 ## Installing Composer Dependencies
 
