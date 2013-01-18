@@ -1,6 +1,47 @@
 {
-    "hash": "ec6122536d2fd287fbfed1e23ebb8601",
+    "hash": "56ff55356f6eaccc98c4c11922e5b6c7",
     "packages": [
+        {
+            "name": "licorice-labs/twigniter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/licorice-labs/twigniter",
+                "reference": "68804c8ff4fffee6773fa33e0a01ecc2b1becf3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/licorice-labs/twigniter/archive/68804c8ff4fffee6773fa33e0a01ecc2b1becf3c.zip",
+                "reference": "68804c8ff4fffee6773fa33e0a01ecc2b1becf3c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "twig/twig": "1.*"
+            },
+            "time": "2013-01-18 19:29:37",
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "LicoriceLabs\\TwigNiter": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Wing Lian",
+                    "email": "wing.lian@gmail.com"
+                }
+            ],
+            "description": "Twig templating for CodeIgniter",
+            "keywords": [
+                "twig",
+                "codeigniter"
+            ]
+        },
         {
             "name": "twig/twig",
             "version": "v1.12.1",
@@ -56,7 +97,7 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ]
+    "stability-flags": {
+        "licorice-labs/twigniter": 20
+    }
 }

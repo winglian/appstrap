@@ -1,5 +1,5 @@
 {
     "require": {
-        "twig/twig": "1.*"
+        "licorice-labs/twigniter": "dev-master"
     }
 }
